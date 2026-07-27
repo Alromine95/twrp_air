@@ -53,10 +53,6 @@ jobs:
             --exclude=.github \
             ./ /tmp/twrp/device/xiaomi/tornado/
 
-      - name: Verify Device Tree
-        run: |
-          ls -la /tmp/twrp/device/xiaomi/tornado
-
       - name: Remove vendorsetup.sh
         run: |
           rm -f /tmp/twrp/device/xiaomi/tornado/vendorsetup.sh || true
@@ -66,12 +62,12 @@ jobs:
           cd /tmp/twrp
           source build/envsetup.sh
           lunch twrp_tornado-eng
-          mka vendorbootimage 2>&1 | tee build.log
+          mka vendorbootimage || mka recoveryimage || mka bootimage
 
       - name: Show Build Output
         if: always()
         run: |
-          find /tmp/twrp/out/target/product -type f || true
+          find /tmp/twrp/out/target/product -type f
 
       - name: Fix Permissions
         if: always()
