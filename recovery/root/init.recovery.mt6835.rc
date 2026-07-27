@@ -21,6 +21,10 @@ on init
     insmod /lib/modules/thermal_interface.ko
     insmod /lib/modules/soc_temp_lvts.ko
     insmod /lib/modules/scp.ko
+    insmod /lib/modules/mtk_tinysys_ipi.ko
+    insmod /lib/modules/mtk_disp_notify.ko
+    insmod /lib/modules/lcm_panel_p15_bias.ko
+    insmod /lib/modules/mtk_panel_ext.ko
     insmod /lib/modules/lct_tp.ko
     insmod /lib/modules/xiaomi_tp.ko
     insmod /lib/modules/focaltech_spi.ko
