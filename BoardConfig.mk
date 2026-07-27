@@ -2,7 +2,7 @@
 # Copyright (C) 2014-2023 The Team Win LLC
 # SPDX-License-Identifier: Apache-2.0
 
-DEVICE_PATH := device/xiaomi/air
+DEVICE_PATH := device/xiaomi/tornado
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -35,10 +35,10 @@ TARGET_IS_64_BIT := true
 TARGET_RECOVERY_NO_APEX := true
 
 # Assertation
-TARGET_OTA_ASSERT_DEVICE := air
+TARGET_OTA_ASSERT_DEVICE := tornado
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := air
+TARGET_BOOTLOADER_BOARD_NAME := tornado
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
