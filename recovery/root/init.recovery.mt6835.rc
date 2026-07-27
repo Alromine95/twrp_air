@@ -20,6 +20,10 @@ on init
     # Load thermal modules for CPU temperature display
     insmod /lib/modules/thermal_interface.ko
     insmod /lib/modules/soc_temp_lvts.ko
+    insmod /lib/modules/scp.ko
+    insmod /lib/modules/lct_tp.ko
+    insmod /lib/modules/xiaomi_tp.ko
+    insmod /lib/modules/focaltech_spi.ko
 
 # For vibrator
     write /sys/class/leds/vibrator/trigger "transient"
