@@ -26,6 +26,7 @@ insmod /lib/modules/mtk_tinysys_ipi.ko
 insmod /lib/modules/mtk-mbox.ko
 insmod /lib/modules/aee_aed.ko
 insmod /lib/modules/emi-mpu.ko
+insmod /lib/modules/mtk-afe-external.ko
 insmod /lib/modules/clk-common.ko
 
 # SCP
