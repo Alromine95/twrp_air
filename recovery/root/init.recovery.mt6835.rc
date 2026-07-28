@@ -27,7 +27,7 @@ on init
     insmod /lib/modules/mtk_panel_ext.ko
     insmod /lib/modules/lct_tp.ko
     insmod /lib/modules/xiaomi_tp.ko
-    insmod /lib/modules/focaltech_spi.ko
+    insmod /lib/modules/nt36528a_spi.ko
 
 # For vibrator
     write /sys/class/leds/vibrator/trigger "transient"
